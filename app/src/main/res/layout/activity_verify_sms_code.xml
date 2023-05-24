@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:background="#D2F9DBFA"
+    tools:context=".VerifySMS_Code">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/backId"
+            style="@style/MaterialAlertDialog.Material3"
+            android:layout_width="30dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:defaultFocusHighlightEnabled="true"
+            android:src="@drawable/baseline_back_24"
+            tools:ignore="ContentDescription,RtlHardcoded,UnusedAttribute" />
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/received"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="SMS kodni kiriting"
+            android:textColor="@color/primary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Sizga SMS orqali yuborilgan kodni kiriting"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/firstNumberId1"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/edittext_bkg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/secondNumberId2"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/edittext_bkg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/thirdNumberId3"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/edittext_bkg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/fourthNumberId4"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/edittext_bkg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:id="@+id/fifthNumberId5"
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/edittext_bkg"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/primary"
+                android:textSize="20sp"
+                tools:ignore="LabelFor" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/VerifySMSCodeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/input_rectangle_background"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Tasdiqlash"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ResendSMSCodeId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="SMS kodni qayta yuborish"
+                android:textColor="@color/primary"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/baseline_replay_24"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+        </LinearLayout>
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/ChangeNumberId"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:fontFamily="@font/montserrat_medium"-->
+        <!--            android:text="Telefon raqamni o'zgartirish"-->
+        <!--            android:textColor="@color/primary"-->
+        <!--            android:textSize="15sp" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/BackToLoginId"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:fontFamily="@font/montserrat_medium"-->
+        <!--            android:text="Ro'yxatdan o'tish"-->
+        <!--            android:textColor="@color/primary"-->
+        <!--            android:textSize="15sp" />-->
+
+
+    </LinearLayout>
+
+</ScrollView>
