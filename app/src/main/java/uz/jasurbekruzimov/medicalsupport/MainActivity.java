@@ -1,14 +1,21 @@
 package uz.jasurbekruzimov.medicalsupport;
 
+import static java.security.AccessController.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.textfield.TextInputLayout;
+
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private ViewPagerAdapter adapter;
     Button btn;
+    TextInputLayout phoneNumber, password;
+    Button loginBtn;
+
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -29,7 +40,17 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Kirish"));
         tabLayout.addTab(tabLayout.newTab().setText("Ro'yxatdan o'tish"));
 
+
+        phoneNumber = findViewById(R.id.phoneID);
+        password = findViewById(R.id.password);
+        loginBtn = findViewById(R.id.loginBtn);
+
+
+
+
+
         FragmentManager fragmentManager = getSupportFragmentManager();
+
         adapter = new ViewPagerAdapter(fragmentManager, getLifecycle());
         viewPager2.setAdapter(adapter);
 

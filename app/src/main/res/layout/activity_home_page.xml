@@ -1,10 +1,281 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="@color/pink"
     tools:context=".HomePage">
 
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/pink">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/header_background"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="20dp"
+          android:orientation="horizontal"
+          android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/nav_menu_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/baseline_menu_24"
+            app:tint="@color/white"
+            style="@style/ShapeAppearanceOverlay.Material3.Button"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Medical Support"
+            android:textColor="@color/yellow"
+            android:textSize="27sp" />
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/medications"
+            app:riv_oval="true"
+            app:tint="@color/white"
+            tools:ignore="RtlHardcoded" />
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/pink"
+        android:padding="10dp"
+        android:paddingStart="1dp"
+        android:paddingEnd="1dp"
+        android:screenReaderFocusable="true"
+        android:scrollbarStyle="insideInset"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UnusedAttribute">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/pink"
+          android:orientation="vertical"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          tools:ignore="MissingConstraints">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reading"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:defaultFocusHighlightEnabled="true"
+            app:cardUseCompatPadding="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_margin="5dp"
+              android:weightSum="2">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:src="@drawable/medications" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="25sp"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="40dp"
+                />
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_margin="5dp"
+              android:weightSum="2">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/loginimg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="25sp"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="40dp"
+                />
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_margin="5dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/received" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pharmacy"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="25sp"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="40dp"
+                tools:ignore="RtlHardcoded" />
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/white"
+            app:cardElevation="10dp"
+            app:cardUseCompatPadding="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_margin="5dp"
+              android:weightSum="2">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_support_agent_24"
+                android:tint="@color/primary"
+                tools:ignore="UseAppTint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support Center"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="22sp"
+                android:textColor="@color/primary"
+                android:layout_marginLeft="20dp"
+                />
+
+          </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
   </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.google.android.material.navigation.NavigationView
+      android:id="@+id/nav_view"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:background="@color/gray"
+      android:fitsSystemWindows="true"
+      android:paddingTop="20dp"
+      app:headerLayout="@layout/nav_header_menu"
+      app:itemIconTint="@color/primary"
+      app:itemTextColor="@color/primary"
+      app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

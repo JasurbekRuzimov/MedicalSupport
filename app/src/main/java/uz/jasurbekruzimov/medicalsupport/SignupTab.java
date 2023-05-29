@@ -13,6 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.google.android.material.textfield.TextInputLayout;
 
 public class SignupTab extends Fragment {
 
@@ -25,7 +29,6 @@ public class SignupTab extends Fragment {
         super.onCreate(savedInstanceState);
 
     }
-    VerifySMS_Code activity = new VerifySMS_Code();
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,6 +41,7 @@ public class SignupTab extends Fragment {
             Intent intent = new Intent(getActivity(), VerifySMS_Code.class);
             startActivity(intent);
         });
+
 
         return root;
     }

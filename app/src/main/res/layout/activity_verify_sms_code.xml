@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:overScrollMode="never"
     android:scrollbars="none"
-    android:background="#D2F9DBFA"
+    android:background="@color/pink"
     tools:context=".VerifySMS_Code">
 
     <LinearLayout
@@ -31,11 +31,12 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="60dp"
             android:src="@drawable/received"
             tools:ignore="ContentDescription" />
 
         <TextView
+            android:id="@+id/numberMobile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -43,13 +44,28 @@
             android:fontFamily="@font/montserrat_medium"
             android:text="SMS kodni kiriting"
             android:textColor="@color/primary"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/numberMobile2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:baselineAligned="false"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="(+998) 99 999 99 99"
+            android:textColor="@color/primary"
+            android:textSize="15sp" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="Sizga SMS orqali yuborilgan kodni kiriting"
             android:textColor="@color/primary"
@@ -67,7 +83,7 @@
                 android:id="@+id/firstNumberId1"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
-                android:layout_margin="2dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/edittext_bkg"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
@@ -83,7 +99,7 @@
                 android:id="@+id/secondNumberId2"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
-                android:layout_margin="2dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/edittext_bkg"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
@@ -99,7 +115,7 @@
                 android:id="@+id/thirdNumberId3"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
-                android:layout_margin="2dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/edittext_bkg"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
@@ -115,7 +131,7 @@
                 android:id="@+id/fourthNumberId4"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
-                android:layout_margin="2dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/edittext_bkg"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
@@ -131,7 +147,7 @@
                 android:id="@+id/fifthNumberId5"
                 android:layout_width="40dp"
                 android:layout_height="45dp"
-                android:layout_margin="2dp"
+                android:layout_margin="3dp"
                 android:background="@drawable/edittext_bkg"
                 android:fontFamily="@font/montserrat_bold"
                 android:gravity="center"
@@ -176,7 +192,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="SMS kodni qayta yuborish"
-                android:textColor="@color/primary"
+                android:textColor="@color/red"
                 android:textSize="19sp" />
 
             <ImageView

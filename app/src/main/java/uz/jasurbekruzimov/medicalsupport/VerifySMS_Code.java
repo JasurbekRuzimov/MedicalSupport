@@ -7,20 +7,29 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class VerifySMS_Code extends AppCompatActivity {
     ImageView back;
     EditText smsCode1 , smsCode2 , smsCode3 , smsCode4 , smsCode5 ;
     LinearLayout resendCode;
+    Button verifyCode;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_sms_code);
+
+
+        TextView numberPhone = findViewById(R.id.numberMobile);
+//        numberPhone.setText(String.format(
+//                "+998 %s", getIntent().getStringExtra("phone")
+//        ));
 
         smsCode1 = findViewById(R.id.firstNumberId1);
         smsCode2 = findViewById(R.id.secondNumberId2);
@@ -30,6 +39,13 @@ public class VerifySMS_Code extends AppCompatActivity {
 
 
         setupCodeInputs();
+
+
+        verifyCode = findViewById(R.id.VerifySMSCodeId);
+        verifyCode.setOnClickListener(v -> {
+            Intent intent = new Intent(VerifySMS_Code.this, HomePage.class);
+            startActivity(intent);
+        });
 
 
 
