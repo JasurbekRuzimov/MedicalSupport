@@ -42,18 +42,17 @@ public class VerifySMS_Code extends AppCompatActivity {
 
 
         verifyCode = findViewById(R.id.VerifySMSCodeId);
+
         verifyCode.setOnClickListener(v -> {
             Intent intent = new Intent(VerifySMS_Code.this, HomePage.class);
             startActivity(intent);
         });
 
 
-
-
         back = findViewById(R.id.backId);
         back.setOnClickListener(v -> {
             onBackPressed();
-            finishActivity(0);
+            finishActivity(1);
         });
 
         resendCode = findViewById(R.id.ResendSMSCodeId);
