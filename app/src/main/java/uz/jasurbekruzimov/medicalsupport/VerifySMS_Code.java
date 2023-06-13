@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -44,8 +46,27 @@ public class VerifySMS_Code extends AppCompatActivity {
         verifyCode = findViewById(R.id.VerifySMSCodeId);
 
         verifyCode.setOnClickListener(v -> {
-            Intent intent = new Intent(VerifySMS_Code.this, HomePage.class);
-            startActivity(intent);
+
+            if (smsCode1.getText().toString().isEmpty()){
+                smsCode1.setError("");
+            }
+            if (smsCode2.getText().toString().trim().isEmpty()){
+                smsCode2.setError("");
+            }
+            if (smsCode3.getText().toString().isEmpty()){
+                smsCode3.setError("");
+            }
+            if (smsCode4.getText().toString().isEmpty()){
+                smsCode4.setError("");
+            }
+            if (smsCode5.getText().toString().isEmpty()){
+                smsCode5.setError("");
+            }
+            else{
+                Intent intent = new Intent(VerifySMS_Code.this, HomePage.class);
+                startActivity(intent);
+            }
+
         });
 
 
