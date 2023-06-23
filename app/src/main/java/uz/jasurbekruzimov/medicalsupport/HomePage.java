@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class HomePage extends AppCompatActivity {
 
@@ -21,6 +24,9 @@ public class HomePage extends AppCompatActivity {
         navMenu.setOnClickListener(v -> {
             drawerLayout.openDrawer(GravityCompat.START);
         });
+
+
+
 
 
 

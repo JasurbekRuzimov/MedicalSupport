@@ -2,4 +2,11 @@
     <string name="app_name">Medical Support</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="AboutMe">Toshkent Axborot Texnologiyalari Universiteti</string>
+    <string name="AboutCourse">3-Kurs talabasi</string>
+    <string name="IjtimoiyTarmoqText">Ro\'zimov Jasurbekning Ijtimoiy tarmoqlardagi sahifalari:</string>
+    <string name="Jasurbek_Ruzimov">Jasurbek Ro\'zimov</string>
+    <string name="website">https://jasurbekruzimov.uz</string>
+
 </resources>

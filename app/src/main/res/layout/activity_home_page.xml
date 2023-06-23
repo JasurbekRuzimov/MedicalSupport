@@ -134,7 +134,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Medical"
+                android:text="Testlar"
                 android:fontFamily="@font/montserrat_bold"
                 android:textSize="25sp"
                 android:textColor="@color/primary"
@@ -170,7 +170,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Doctor"
+                android:text="Shifokorlar"
                 android:fontFamily="@font/montserrat_bold"
                 android:textSize="25sp"
                 android:textColor="@color/primary"
@@ -205,7 +205,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pharmacy"
+                android:text="Dori-darmonlar"
                 android:fontFamily="@font/montserrat_bold"
                 android:textSize="25sp"
                 android:textColor="@color/primary"
@@ -243,7 +243,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Support Center"
+                android:text="Qo'llab quvvatlash"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:fontFamily="@font/montserrat_bold"
@@ -270,7 +270,7 @@
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
       android:layout_gravity="start"
-      android:background="@color/gray"
+      android:background="@color/pink"
       android:fitsSystemWindows="true"
       android:paddingTop="20dp"
       app:headerLayout="@layout/nav_header_menu"

@@ -5,14 +5,14 @@
     <item
         android:id="@+id/nav_share"
         android:icon="@drawable/baseline_settings_24"
-        android:title="Settings"
+        android:title="Sozlamalar"
         tools:ignore="HardcodedText,MissingPrefix" />
 
 
 
     <item
         android:id="@+id/nav_tools"
-        android:title="Another tools"
+        android:title="Yana"
         tools:ignore="HardcodedText,MissingPrefix" >
 
         <menu>
@@ -20,12 +20,12 @@
             <item
                 android:id="@+id/nav_share1"
                 android:icon="@drawable/baseline_share_24"
-                android:title="Share"
+                android:title="Do'stlarga ulashish"
                 tools:ignore="HardcodedText" />
             <item
                 android:id="@+id/nav_gallery1"
                 android:icon="@drawable/baseline_support_agent_24"
-                android:title="Support"
+                android:title="Qo'llab quvvatlash xizmati"
                 tools:ignore="HardcodedText,MissingPrefix" />
 
             <item
@@ -37,7 +37,7 @@
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/baseline_info_24"
-                android:title="About Us"
+                android:title="Biz haqimizda"
                 tools:ignore="HardcodedText" />
 
         </menu>
