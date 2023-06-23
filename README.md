@@ -1,6 +1,6 @@
 # MedicalSupport
 
-![photo_2023-06-10_12-10-54](https://github.com/JasurbekRuzimov/MedicalSupport/assets/82991168/1dc7f891-b0a9-4b30-86b9-f1935b158286) 
+![image](https://github.com/JasurbekRuzimov/MedicalSupport/assets/82991168/558ccbb5-fbae-4af5-9d3d-0e199c523587)
 
 <br> 
 <br>
