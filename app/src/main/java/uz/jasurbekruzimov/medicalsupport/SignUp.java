@@ -1,5 +1,4 @@
 package uz.jasurbekruzimov.medicalsupport;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

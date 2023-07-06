@@ -8,5 +8,6 @@
     <string name="IjtimoiyTarmoqText">Ro\'zimov Jasurbekning Ijtimoiy tarmoqlardagi sahifalari:</string>
     <string name="Jasurbek_Ruzimov">Jasurbek Ro\'zimov</string>
     <string name="website">https://jasurbekruzimov.uz</string>
+    <string name="server_error">Xatolik yuz berdi :(</string>
 
 </resources>
